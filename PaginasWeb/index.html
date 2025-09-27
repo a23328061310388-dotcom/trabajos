@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap & jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css"/>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <title>David</title>
+
+  <style>
+    :root {
+      --ultra-violet: rgb(221, 216, 216);
+      --russian-violet: rgb(0, 225, 255); /* celeste */
+      --white: rgb(44, 156, 160);
+      --antiflash-white: rgb(52, 147, 160);
+      --sunglow: rgb(110, 110, 110);
+      --chocolate-cosmos: rgb(99, 95, 95);
+    }
+
+    body {
+      background: url("fondo.jpg") no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background-color: var(--russian-violet);
+      border: none;
+    }
+
+    .navbar a {
+      color: #ffffff !important;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      color: #003c44 !important;
+    }
+
+    .dropdown-menu {
+      background-color: #ffffff;
+    }
+
+    .dropdown-menu > li > a {
+      color: #000;
+    }
+
+    .dropdown-menu > li > a:hover {
+      background-color: #00cfff;
+      color: #fff;
+    }
+
+    /* CUADRO CENTRAL */
+    .jumbotron {
+      background-color: rgba(255, 255, 255, 0.6); /* más opaco */
+      text-align: center;
+      padding: 50px 20px;
+      border-radius: 10px;
+      max-width: 800px;
+      margin: 50px auto;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .gantz-text h1 {
+      color: #000;
+      font-size: 60px;
+      font-weight: 800;
+      margin-bottom: 20px;
+    }
+
+    .gantz-text h3 {
+      color: #000;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .gantz-text p {
+      color: #000;
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="nav navbar-nav">
+          <!-- UNIDAD 1 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownU1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UNIDAD 1</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownU1">
+              <!-- Aquí ajustamos el enlace para que apunte a index2.html -->
+              <li><a class="dropdown-item" href="index2.html">Conceptos</a></li>
+              <li><a class="dropdown-item" href="index3.html">Ataques</a></li>
+              <li><a class="dropdown-item" href="#">Protección</a></li>
+            </ul>
+          </li>
+
+          <!-- UNIDAD 2 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownU2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UNIDAD 2</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownU2">
+              <li><a class="dropdown-item" href="index4.html">Conceptos</a></li>
+              <li><a class="dropdown-item" href="index5.html">Ataques</a></li>
+              <li><a class="dropdown-item" href="index6.html">Protección</a></li>
+            </ul>
+          </li>
+
+          <!-- UNIDAD 3 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdownU3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">UNIDAD 3</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownU3">
+              <li><a class="dropdown-item" href="index7.html">Conceptos</a></li>
+              <li><a class="dropdown-item" href="index8.html">Ataques</a></li>
+              <li><a class="dropdown-item" href="index9.html">Protección</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENIDO CENTRAL -->
+  <div class="jumbotron">
+    <div class="gantz-text">
+      <h1>David de la Cruz</h1>
+      <h3>Programación 5to A</h3>
+      <p>Construye páginas web</p>
+      <p>Construye aplicaciones web</p>
+    </div>
+  </div>
+
+</body>
+</html>
