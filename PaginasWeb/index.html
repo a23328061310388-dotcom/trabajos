@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ciberseguridad - Unidad 1: Conceptos</title>
+
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #d8eafc;
+      --nav: #00e1ff;
+      --submenu: #25d4eb;
+      --accent: #0088aa;
+      --table-head: #00bcd4;
+      --hover: #dbeafe;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: url("fondo.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Montserrat', sans-serif;
+      color: #000;
+    }
+
+    nav {
+      background-color: var(--nav);
+      padding: 14px 10px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    nav .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    nav .menu li {
+      position: relative;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 8px 12px;
+      display: inline-block;
+      transition: color 0.2s ease;
+    }
+
+    nav a:hover {
+      color: #003c44;
+    }
+
+    .has-sub .dropdown {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      background: var(--submenu);
+      border-radius: 10px;
+      padding: 8px 0;
+      min-width: 200px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .has-sub:focus-within .dropdown,
+    .has-sub:hover .dropdown {
+      display: block;
+    }
+
+    .dropdown li {
+      list-style: none;
+    }
+
+    .dropdown a {
+      display: block;
+      padding: 10px 16px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .dropdown a:hover {
+      color: #facc15;
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 6px;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: 50px auto;
+      background: rgba(255, 255, 255, 0.75);
+      border-radius: 15px;
+      padding: 50px 40px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--accent);
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #003c44;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      border-bottom: 3px solid var(--nav);
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+
+    th,
+    td {
+      border: 1px solid #00bcd4;
+      padding: 16px 20px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: var(--table-head);
+      color: white;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    tr:nth-child(even) td {
+      background: #e3f6fc;
+    }
+
+    tr:hover td {
+      background: var(--hover);
+      transition: 0.2s;
+    }
+
+    td p {
+      margin: 0 0 8px 0;
+      line-height: 1.6;
+      color: #222;
+      font-size: 1.15rem;
+      font-weight: 600;
+    }
+
+    td small {
+      display: block;
+      color: #006f9b;
+      margin-top: 6px;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 780px) {
+      .content {
+        margin: 20px 16px;
+        padding: 25px 18px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      table {
+        font-size: 1rem;
+      }
+
+      td p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+
+      <li class="has-sub" tabindex="0">
+        <a href="#" aria-haspopup="true" aria-expanded="false">Unidad 1</a>
+        <ul class="dropdown">
+          <li><a href="melany02.html">Conceptos</a></li>
+          <li><a href="index3.html">Ataques</a></li>
+          <li><a href="melany04.html">Protección</a></li>
+        </ul>
+      </li>
+
+      <li class="has-sub" tabindex="0">
+        <a href="#" aria-haspopup="true" aria-expanded="false">Unidad 2</a>
+        <ul class="dropdown">
+          <li><a href="#">Conceptos</a></li>
+          <li><a href="#">Ataques</a></li>
+          <li><a href="#">Protección</a></li>
+        </ul>
+      </li>
+
+      <li class="has-sub" tabindex="0">
+        <a href="#" aria-haspopup="true" aria-expanded="false">Unidad 3</a>
+        <ul class="dropdown">
+          <li><a href="#">Conceptos</a></li>
+          <li><a href="#">Ataques</a></li>
+          <li><a href="#">Protección</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h1>Unidad 1: Conceptos de Ciberseguridad</h1>
+
+    <h2>Conceptos Básicos</h2>
+    <table>
+      <tr>
+        <th>Concepto</th>
+        <th>Descripción / Ejemplo</th>
+      </tr>
+      <tr>
+        <td>Confidencialidad</td>
+        <td>
+          <p>Mantener la información accesible solo para quienes estén autorizados.</p>
+          <small>Ejemplo: cifrado de mensajes y control de acceso a carpetas.</small>
+        </td>
+      </tr>
+      <tr>
+        <td>Integridad</td>
+        <td>
+          <p>Garantizar que los datos no se alteren sin autorización y se pueda detectar cualquier cambio.</p>
+          <small>Ejemplo: firmas digitales y checksums (hashes).</small>
+        </td>
+      </tr>
+      <tr>
+        <td>Disponibilidad</td>
+        <td>
+          <p>Que los sistemas y datos estén disponibles cuando los usuarios los necesiten.</p>
+          <small>Ejemplo: redundancia, backups y mitigación de DDoS.</small>
+        </td>
+      </tr>
+      <tr>
+        <td>Autenticación</td>
+        <td>
+          <p>Verificar que una identidad (usuario, dispositivo) es quien dice ser.</p>
+          <small>Ejemplo: contraseña + 2FA (doble factor).</small>
+        </td>
+      </tr>
+      <tr>
+        <td>Autorización</td>
+        <td>
+          <p>Determinar qué acciones puede realizar una identidad autenticada.</p>
+          <small>Ejemplo: permisos de archivo y roles en un sistema.</small>
+        </td>
+      </tr>
+    </table>
+
+    <h2>Tipos de Malware</h2>
+    <table>
+      <tr>
+        <th>Tipo</th>
+        <th>Descripción</th>
+      </tr>
+      <tr><td>Virus</td><td>Programa que se adjunta a archivos ejecutables y se propaga cuando se ejecutan.</td></tr>
+      <tr><td>Gusano</td><td>Se replica autónomamente a través de redes explotando vulnerabilidades.</td></tr>
+      <tr><td>Caballo de Troya</td><td>Software que parece legítimo pero incluye funciones maliciosas ocultas.</td></tr>
+      <tr><td>Ransomware</td><td>Cifra archivos o bloquea sistemas pidiendo rescate a cambio de la clave.</td></tr>
+      <tr><td>Spyware</td><td>Monitorea y envía información del usuario sin su consentimiento.</td></tr>
+      <tr><td>Adware</td><td>Inyecta anuncios en el sistema; puede acompañar otras amenazas.</td></tr>
+      <tr><td>Rootkit</td><td>Oculta procesos y mantiene acceso persistente al sistema.</td></tr>
+      <tr><td>Keylogger</td><td>Registra teclas para obtener contraseñas y datos.</td></tr>
+      <tr><td>Botnet</td><td>Red de equipos controlados por un atacante para ataques coordinados.</td></tr>
+      <tr><td>Cryptojacker</td><td>Utiliza recursos del equipo para minar criptomonedas sin permiso.</td></tr>
+      <tr><td>Wiper</td><td>Malware diseñado para destruir datos de forma irreversible.</td></tr>
+    </table>
+  </div>
+</body>
+</html>
